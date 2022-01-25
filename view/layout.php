@@ -21,7 +21,7 @@
         <?php require_once $vistas[$_SESSION['paginaEnCurso']];?>
         
         <footer class="piepagina">
-            <p><a>&copy;</a><a href="http://daw203.ieslossauces.es/index.php">Rodrigo Geras</a> 29/09/2021 Todos los derechos reservados.</p>
+            <p><a>&copy;</a><a href="http://daw203.ieslossauces.es/index.php">Rodrigo Geras</a> Todos los derechos reservados.</p>
             <p>Ultima actualización: </p>
         </footer>
     </body>

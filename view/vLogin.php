@@ -11,7 +11,7 @@
                     <div>
                         <label for="CodUsuario"><strong>Usuario*</strong></label>
                         <input name="CodUsuario" id="CodUsuario" type="text" value="<?php echo isset($_REQUEST['CodUsuario']) ? $_REQUEST['CodUsuario'] : null; ?>">
-                        <p class="mensajeError"><?php echo $aErrores['codUsuario'] ?></p>
+                       
                     </div>
                 </li>
                 <!--Campo Password OBLIGATORIO-->
@@ -19,7 +19,7 @@
                     <div>
                         <label for="Password"><strong>Password*</strong></label>
                         <input name="Password" id="Password" type="password" value="<?php echo isset($_REQUEST['Password']) ? $_REQUEST['Password'] : null; ?>">
-                        <p class="mensajeError"><?php echo $aErrores['password'] ?></p>
+                       
                     </div>
                 </li>
                 <!--Campo Botones Entrar y Volver y registrarse-->
