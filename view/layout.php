@@ -5,7 +5,7 @@
         <meta name="author" content="Rodrigo Geras Zurron">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <meta name="application-name" content="Login y logout">
+        <meta name="application-name" content="Log In Log Out">
         <meta name="description" content="Control de acceso e identificación de un usuario">
         <link href="../203DWESLogInLogOutMulticapa/webroot/css/estilo.css" rel="stylesheet" type="text/css">
         <link href="../203DWESLogInLogOutMulticapa/webroot/css/estiloejercicio.css" rel="stylesheet" type="text/css">

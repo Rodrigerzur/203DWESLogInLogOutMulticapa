@@ -2,7 +2,7 @@
     <h2>Error</h2>
 </article>
 <form class="buttonback">
-    <input type="submit" value="VOLVER" name="volvererror" class="volverdetalle"/>
+    <input type="submit" value="Volver" name="volvererror" class="volverdetalle"/>
 </form>
 <h3 class="tituloerror">Se ha producido el siguiente error:</h3>
 <table class="tablaerror">

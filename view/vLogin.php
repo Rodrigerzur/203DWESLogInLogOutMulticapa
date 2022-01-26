@@ -22,11 +22,11 @@
                        
                     </div>
                 </li>
-                <!--Campo Botones Entrar y Volver y registrarse-->
+                <!--Campo Botones Entrar y Volver y Registrarse-->
                 <li>
-                    <input type="submit" value="ENTRAR" name="entrar" class="entrar"/>
-                    <input type="submit" value="VOLVER" name="volver" class="volver"/>
-                    <input type="submit" value="registrarse" name="registrarse" class="registrarse"/>
+                    <input type="submit" value="Entrar" name="entrar" class="entrar"/>
+                    <input type="submit" value="Volver" name="volver" class="volver"/>
+                    <input type="submit" value="Registrarse" name="Registrarse" class="Registrarse"/>
                 </li>
             </ul>
         </fieldset>

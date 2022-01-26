@@ -16,7 +16,11 @@
         "inicioprivado" => "controller/cInicioPrivado.php",
         "wip" => "controller/cWIP.php",
         "error" => "controller/cError.php",
-        "detalle" => "controller/cDetalle.php"
+        "detalle" => "controller/cDetalle.php",
+        "registro" => "controller/cRegistro.php",
+        "micuenta" => "controller/cMiCuenta.php",
+        "cambiarpassword" => "controller/cCambiarPassword.php",
+        "borrarcuenta" => "controller/cBorrarCuenta.php"
     ];
     $vistas = [
         "layout" => "view/layout.php",
@@ -25,6 +29,10 @@
         "inicioprivado" => "view/vInicioPrivado.php",
         "wip" => "view/vWIP.php",
         "error" => "view/vError.php",
-        "detalle" => "view/vDetalle.php"
+        "detalle" => "view/vDetalle.php",
+        "registro" => "view/vRegistro.php",
+        "micuenta" => "view/vMiCuenta.php",
+        "cambiarpassword" => "view/vCambiarPassword.php",
+        "borrarcuenta" => "view/vBorrarCuenta.php"
     ]
 ?>

@@ -12,5 +12,5 @@
     <input type="submit" value="CERRAR SESION" name="cerrarsesion" class="cerrarsesion"/>
     <input type="submit" value="EDITAR PERFIL" name="editarperfil" class="editarperfil"/>
     <input type="submit" value="MTO DEPARTAMENTOS" name="mtodepartamentos" class="mtoDepartamentos"/>
-    <input type="submit" value="DETALLE" name="detalle" class="detalle"/>
+    <input type="submit" value="DETALLES" name="detalle" class="detalle"/>
 </form>

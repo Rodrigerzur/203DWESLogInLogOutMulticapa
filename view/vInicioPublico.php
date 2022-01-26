@@ -3,6 +3,6 @@
 </article>
 <form class="formularioIndex">
     <input type="submit" value="Iniciar sesión" name="iniciarsesion" class="iniciarsesion"/>
-    <input type="submit" value="registrarse" name="registrarse" class="registrarsepublico"/>
-    <input type="submit" value="SALIR" name="salir" class="salir"/>
+    <input type="submit" value="Registrarse" name="Registrarse" class="Registrarsepublico"/>
+    <input type="submit" value="Salir" name="salir" class="salir"/>
 </form>
