@@ -1,7 +1,7 @@
 <article class="titulopagina">
     <h2>Editar Perfil</h2>
 </article>
-<form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="formMiCuenta">
+<form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form">
     <fieldset>
         <p class="tituloMiCuenta">Editar Perfil de Usuario<p>
         <ul>

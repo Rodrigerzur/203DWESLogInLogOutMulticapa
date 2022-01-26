@@ -1,7 +1,7 @@
 <article class="titulopagina">
     <h2>Registro</h2>
 </article>
-<form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="formRegistro">
+<form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form">
     <fieldset>
         <p class="tituloRegistros">Registro nuevo usuario<p>
         <ul>
@@ -43,7 +43,7 @@
             </li>
             <!--Campo Botones Crear y Cancelar-->
             <li>
-                <input type="submit" value="crear" name="crear" class="crear"/>
+                <input type="submit" value="CREAR" name="crear" class="crear"/>
                 <input type="submit" value="CANCELAR" name="cancelar" class="cancelar"/>
             </li>
         </ul>

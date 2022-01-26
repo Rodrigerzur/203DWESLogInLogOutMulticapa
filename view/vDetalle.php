@@ -1,8 +1,8 @@
 <article class="titulopagina">
     <h2>Detalle</h2>
 </article>
-<form class="buttonback">
-    <input type="submit" value="Volver" name="volver" class="volverdetalle"/>
+<form class="form">
+    <input type="submit" value="Volver" name="volver" class="volver"/>
 </form>
 <!–– Muestra del contenido de la variable $_SESSION con foreach()––>
 <?php if (!empty($_SESSION)) { ?>

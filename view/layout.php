@@ -7,9 +7,7 @@
         <meta name="robots" content="index, follow">
         <meta name="application-name" content="Log In Log Out">
         <meta name="description" content="Control de acceso e identificación de un usuario">
-        <link href="../203DWESLogInLogOutMulticapa/webroot/css/estilo.css" rel="stylesheet" type="text/css">
-        <link href="../203DWESLogInLogOutMulticapa/webroot/css/estiloejercicio.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../203DWESLogInLogOutMulticapa/webroot/css/img/home.png" type="image/x-icon">
+        <link href="../203DWESLogInLogOutMulticapa/webroot/css/style.css" rel="stylesheet" type="text/css">
         <title>Index Login y Logout Tema 5</title>
     </head>
     
@@ -20,7 +18,7 @@
         
         <?php require_once $vistas[$_SESSION['paginaEnCurso']];?>
         
-        <footer class="piepagina">
+        <footer class="footer">
             <p><a>&copy;</a><a href="http://daw203.ieslossauces.es/index.php">Rodrigo Geras</a> Todos los derechos reservados.</p>
             <p>Ultima actualización: </p>
         </footer>

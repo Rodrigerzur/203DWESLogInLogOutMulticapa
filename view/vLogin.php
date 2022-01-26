@@ -2,7 +2,7 @@
     <h2>Login</h2>
 </article>
 <main>
-    <form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form" id="formulariologin">
+    <form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form">
         <fieldset>
             <p>Iniciar sesión<p>
             <ul>
@@ -31,3 +31,4 @@
             </ul>
         </fieldset>
     </form>
+</main>

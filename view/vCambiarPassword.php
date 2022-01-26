@@ -1,7 +1,7 @@
 <article class="titulopagina">
     <h2>Cambiar Password</h2>
 </article>
-<form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="formCambiarPassword">
+<form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form">
     <fieldset>
         <p class="tituloCambiarPassword">Cambiar Contraseña<p>
         <ul>
