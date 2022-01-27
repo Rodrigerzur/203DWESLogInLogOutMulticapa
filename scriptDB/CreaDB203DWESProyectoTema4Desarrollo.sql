@@ -14,7 +14,7 @@ use DB203DWESProyectoTema4;
 create user 'User203DWESProyectoTema4'@'%' IDENTIFIED BY 'P@ssw0rd';
 grant all privileges on DB203DWESProyectoTema4.* to 'User203DWESProyectoTema4'@'%';
 
-CREATE TABLE IF NOT EXISTS T01_Usuario (
+CREATE TABLE IF NOT EXISTS T02_Usuario (
     T01_CodUsuario VARCHAR(8) PRIMARY KEY,
     T01_Password VARCHAR(255) NOT NULL,
     T01_DescUsuario VARCHAR(255) NOT NULL,

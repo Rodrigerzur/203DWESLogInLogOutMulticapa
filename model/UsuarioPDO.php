@@ -16,7 +16,7 @@ class UsuarioPDO implements UsuarioDB{
         
         //Consulta SQL para comprobar si existe el usuario
         $consulta = <<<CONSULTA
-            SELECT * FROM T01_Usuario 
+            SELECT * FROM T02_Usuario 
             WHERE T01_CodUsuario='{$codUsuario}' 
             AND T01_Password=SHA2("{$codUsuario}{$password}", 256); 
         CONSULTA;
@@ -47,7 +47,7 @@ class UsuarioPDO implements UsuarioDB{
         
         //Consulta SQL para actualizar la ultima conexion del usuario y las conexiones
         $consultaActualizacionFechaUltimaConexion = <<<CONSULTA
-            UPDATE T01_Usuario 
+            UPDATE T02_Usuario 
             SET T01_NumConexiones=T01_NumConexiones+1, T01_FechaHoraUltimaConexion=unix_timestamp() 
             WHERE T01_CodUsuario='{$oUsuario->getCodUsuario()}';
         CONSULTA;
@@ -69,7 +69,7 @@ class UsuarioPDO implements UsuarioDB{
     public static function altaUsuario($codUsuario, $password, $descUsuario){
         //Consulta SQL para dar de alta un nuevo usuario
         $consultaCrearUsuario = <<<CONSULTA
-            INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario, T01_NumConexiones, T01_FechaHoraUltimaConexion) VALUES ("{$codUsuario}", SHA2("{$codUsuario}{$password}", 256), "{$descUsuario}", 1, UNIX_TIMESTAMP());
+            INSERT INTO T02_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario, T01_NumConexiones, T01_FechaHoraUltimaConexion) VALUES ("{$codUsuario}", SHA2("{$codUsuario}{$password}", 256), "{$descUsuario}", 1, UNIX_TIMESTAMP());
         CONSULTA;
         
         if(DBPDO::ejecutarConsulta($consultaCrearUsuario)){
@@ -89,7 +89,7 @@ class UsuarioPDO implements UsuarioDB{
     public static function validarCodNoExiste($codUsuario){
         //Consulta SQL para validar si el codigo de usuario existe
         $consultaExisteUsuario = <<<CONSULTA
-            SELECT T01_CodUsuario FROM T01_Usuario WHERE T01_CodUsuario='{$codUsuario}';
+            SELECT T01_CodUsuario FROM T02_Usuario WHERE T01_CodUsuario='{$codUsuario}';
         CONSULTA;
         return DBPDO::ejecutarConsulta($consultaExisteUsuario)->fetchObject();
     }
@@ -105,7 +105,7 @@ class UsuarioPDO implements UsuarioDB{
     public static function modificarUsuario($oUsuario, $descUsuario){
         //Consulta SQL para modificar la descripcion de un usuario
         $consultaModificarUsuario = <<<CONSULTA
-            UPDATE T01_Usuario SET T01_DescUsuario="{$descUsuario}" WHERE T01_CodUsuario="{$oUsuario->getCodUsuario()}";
+            UPDATE T02_Usuario SET T01_DescUsuario="{$descUsuario}" WHERE T01_CodUsuario="{$oUsuario->getCodUsuario()}";
         CONSULTA;
             
         $oUsuario->setDescUsuario($descUsuario);
@@ -128,7 +128,7 @@ class UsuarioPDO implements UsuarioDB{
     public static function cambiarPassword($oUsuario, $password){
         //Consulta SQL para modificar la password de un usuario
         $consultaModificarPassword = <<<CONSULTA
-            UPDATE T01_Usuario SET T01_Password=SHA2("{$oUsuario->getCodUsuario()}{$password}", 256) WHERE T01_CodUsuario="{$oUsuario->getCodUsuario()}";
+            UPDATE T02_Usuario SET T01_Password=SHA2("{$oUsuario->getCodUsuario()}{$password}", 256) WHERE T01_CodUsuario="{$oUsuario->getCodUsuario()}";
         CONSULTA;
             
         $oUsuario->setPassword($password);

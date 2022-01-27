@@ -7,7 +7,7 @@ try {
     $miDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sql = <<<EOD
-DROP TABLE IF EXISTS T01_Usuario;
+DROP TABLE IF EXISTS T02_Usuario;
 DROP TABLE IF EXISTS T02_Departamento;
 EOD;
 

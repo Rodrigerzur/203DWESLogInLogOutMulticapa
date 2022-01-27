@@ -12,7 +12,7 @@ INSERT INTO T02_Departamento(T02_CodDepartamento,T02_DescDepartamento,T02_FechaC
 ('DAW', 'departamento DAW', 1406149672, 1000.3),
 ('DIW', 'departamento DIW', 1406149672, 289.3);
 
-INSERT INTO T01_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
+INSERT INTO T02_Usuario(T01_CodUsuario, T01_Password, T01_DescUsuario) VALUES
 ('albertoF',SHA2('albertoFpaso',256),'AlbertoF'),
 ('outmane',SHA2('outmanepaso',256),'Outmane'),
 ('rodrigo',SHA2('rodrigopaso',256),'Rodrigo'),

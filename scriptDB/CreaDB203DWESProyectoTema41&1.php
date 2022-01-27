@@ -10,12 +10,12 @@ try {
 use dbs4868791;
 create user 'dbu2267458'@'%' IDENTIFIED BY 'daw2_Sauces';
 grant all privileges on dbs4868791.* to 'dbu2267458'@'%';
-CREATE TABLE IF NOT EXISTS T01_Usuario (
+CREATE TABLE IF NOT EXISTS T02_Usuario (
     T01_CodUsuario VARCHAR(8) PRIMARY KEY,
     T01_Password VARCHAR(255) NOT NULL,
     T01_DescUsuario VARCHAR(255) NOT NULL,
     T01_NumConexiones INT DEFAULT 0 NOT NULL,
-    T01_FechaHoraUltimaConexionAnterior DATETIME NULL ,
+    T01_FechaHoraUltimaConexionAnterior INT NULL ,
     T01_Perfil enum('administrador', 'usuario') DEFAULT 'usuario', 
     T01_ImagenUsuario mediumblob
 ) ENGINE=INNODB;
