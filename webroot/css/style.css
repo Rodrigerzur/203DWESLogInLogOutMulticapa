@@ -21,7 +21,7 @@ and open the template in the editor.
 
 html, body{
     height: 100%; 
-    background: url(../media/fatcat.jpg) no-repeat center center ;
+    
 }
 
 
@@ -97,13 +97,20 @@ input.enviar{
     font-size: 20px;
 }
 
-.volver{
+.volver,.entrar, .Registrarse,.Registrarsepublico,.iniciarsesion,.salir,.crear,.cancelar,.aceptar,.cancelarperfil,.eliminarcuenta{
 
-    width: 300px;
+    width: 200px;
     height: 40px;
     font-size: 20px;
+    margin:5px;
 }
-
+.cambiarpassword{
+    width:300px;
+    height:40px;
+    font-size:20px;
+    background:red;
+    margin:10px;
+}
 .resultadoConsulta{
     border:3px solid black;
     text-align: left;
@@ -228,7 +235,7 @@ td{
     
 }
 
-footer{
+footer, .footer{
     display:flex;
     justify-content: space-between;
     padding:10px;
@@ -248,4 +255,21 @@ footer:nth-child(2){
 footer a{
     text-decoration: none;
     color:green;
+}
+
+.form{
+    margin:auto;
+    text-align: center;
+    background:transparent;
+    color: black;
+    font-size:1.5em;
+    width:50%;
+    padding:20px;
+}
+
+li{
+    list-style-type: none;
+}
+input{
+    margin:5px;
 }
