@@ -2,7 +2,7 @@
 
 if(isset($_REQUEST['cancelar'])){ //Si el usuario pulsa el boton de cancelar, mando al usuario a la pagina de micuenta
     $_SESSION['paginaEnCurso'] = 'micuenta'; //Asigno a la pagina en curso la pagina micuenta
-    header('Location: index.php'); //Redireciono de nuevo a micuenta
+    header('Location: index.php'); 
     exit;
 }
 
@@ -47,5 +47,5 @@ if($entradaOK){
     exit;
 }
 
-require_once $vistas['layout']; //Cargo la pagina de cambiarPassword
+require_once $vistas['layout'];
 ?>

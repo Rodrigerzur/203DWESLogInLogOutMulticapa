@@ -19,5 +19,5 @@ if(isset($_REQUEST['salir'])){ //Si el usuario pulsa el boton de salir, sale de 
     exit;
 }
 
-require_once $vistas['layout']; //Cargo la pagina de inicio publico
+require_once $vistas['layout'];
 ?>

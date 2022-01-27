@@ -18,4 +18,4 @@ $sDescError = $_SESSION['error']->getDescError();
 $sArchivoError = $_SESSION['error']->getArchivoError();
 $iLineaError = $_SESSION['error']->getLineaError();
 
-require_once $vistas['layout']; //Cargo la pagina de error
+require_once $vistas['layout'];

@@ -53,5 +53,5 @@ $conexionesMiCuenta = $_SESSION['usuario203DWESLogInLogOutMulticapa']->getNumCon
 $ultimaconexionMiCuenta = $_SESSION['usuario203DWESLogInLogOutMulticapa']->getFechaHoraUltimaConexion(); //Variable que contiene la fecha y hora de la ultima conexion del usuario loggeado
 $passwordMiCuenta = $_SESSION['usuario203DWESLogInLogOutMulticapa']->getPassword(); //Variable que contiene la password del usuario loggeado
 
-require_once $vistas['layout']; //Cargo la pagina de miCuenta
+require_once $vistas['layout']; 
 ?>

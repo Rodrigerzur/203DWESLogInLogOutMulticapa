@@ -13,5 +13,5 @@ if(isset($_REQUEST['volver'])){ //Si el usuario pulsa el boton de volver, le man
     exit;
 }
 
-require_once $vistas['layout']; //Cargo la pagina de detalle
+require_once $vistas['layout']; 
 ?>

@@ -36,5 +36,5 @@ $sDescUsuario = $_SESSION['usuario203DWESLogInLogOutMulticapa']->getDescUsuario(
 $iNumConexiones = $_SESSION['usuario203DWESLogInLogOutMulticapa']->getNumConexiones(); //Variable que contiene el numero total de conexiones del usuario loggeado
 $sFechaHoraUltimaConexionAnterior = $_SESSION['usuario203DWESLogInLogOutMulticapa']->getFechaHoraUltimaConexionAnterior(); //Variable que contiene la fecha de la ultima conexion del usuario loggeado
 
-require_once $vistas['layout']; //Cargo la pagina de inicio privado
+require_once $vistas['layout']; 
 ?>

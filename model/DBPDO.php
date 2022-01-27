@@ -1,15 +1,7 @@
 <?php
 
 class DBPDO implements DB{
-    /**
-     * Metodo ejecutarConsulta()
-     * 
-     * Metodo que nos permite ejecutar una consulta contra la base de datos
-     * 
-     * @param string $sentenciaSQL Sentencia SQL para ejecutar
-     * @param array|null $parametros Parametros que se le pueden pasar a la sentencia, puede ser un array o null
-     * @return PDOStatement|null Devuelvo el resultado de la consulta
-     */
+
     public static function ejecutarConsulta($sentenciaSQL, $parametros = null){
         try {
             $DB203DWESLogInLogOutMulticapa = new PDO(HOST, USER, PASSWORD);//Hago la conexion con la base de datos
@@ -23,7 +15,7 @@ class DBPDO implements DB{
             header('Location: index.php');
             exit;
         } finally{
-            unset($DB203DWESLogInLogOutMulticapa);//Cierro la conexion
+            unset($DB203DWESLogInLogOutMulticapa);
         }
     }
 }

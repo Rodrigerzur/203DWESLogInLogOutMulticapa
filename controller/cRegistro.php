@@ -49,5 +49,5 @@ if($entradaOK){
     exit;
 }
 
-require_once $vistas['layout']; //Cargo la pagina de registro
+require_once $vistas['layout']; 
 ?>

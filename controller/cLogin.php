@@ -47,5 +47,5 @@ if($entradaOK){
     exit;
 }
 
-require_once $vistas['layout'];//Cargo la pagina de login
+require_once $vistas['layout'];
 ?>
